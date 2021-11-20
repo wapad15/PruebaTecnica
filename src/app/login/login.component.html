@@ -1,0 +1,42 @@
+<div class="animated fadeIn" fxLayout="column" fxLayoutAlign="center center">
+    <mat-toolbar color="primary" class="mat-elevation-z9 lgn-toolbar">Portal Institucional Hogwarts</mat-toolbar>
+
+    <mat-card class="container mat-elevation-z4" fxLayout="column" fxLayoutAlign="center center" >
+        <img class="logo" src="./assets/img/logo.jpg" alt="logo">
+      </mat-card>
+
+      <div class="grid-container animated fadeIn container" fxLayout="column" >
+        <div fxLayout="row">
+          <mat-card fxFlex class="mt-2">
+            <div fxLayout="row" fxLayoutAlign="center center">
+              <h1 class="mat-h2">Secciones</h1>
+            </div>
+            <mat-card-content >
+              <div fxLayout="row wrap" class="content">
+                <div fxFlex="15"  style="padding: 10px;" >
+                  <a class="link-type"  (click)="openStudents()" >
+                    <img class="icono" src="./assets/icons/student.jpg" alt="logo">
+                    <h4 class="color-g">{{"Estudiantes"}}</h4>
+                  </a>
+                </div>
+                <div fxFlex="15"  style="padding: 10px;" >
+                    <a class="link-type"  (click)="openTeachers()" >
+                      <img class="icono" src="./assets/icons/student.jpg" alt="logo">
+                      <h4 class="color-g">{{"Profesores"}}</h4>
+                    </a>
+                  </div>
+                  <div fxFlex="15"  style="padding: 10px;" >
+                    <a class="link-type"  (click)="openPersonajes()" >
+                      <img class="icono" src="./assets/icons/student.jpg" alt="logo">
+                      <h4 class="color-g">{{"Personajes"}}</h4>
+                    </a>
+                  </div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+
+
+
+</div>

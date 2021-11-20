@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+
+$my-app-primary: mat-palette($mat-green, 700, 800, 800);
+$my-app-accent:  mat-palette($mat-light-blue, 700, 800, 800);
+$my-app-warn:    mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+$color-accent: #0288d1;
+
+@include angular-material-theme($my-app-theme);
+
+.link-primary {
+  color: $color-accent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.send-button > svg {
+  fill: $color-accent;
+}
+.cdk-overlay-pane-dialog {
+  position: relative!important;
+}
